@@ -1,0 +1,30 @@
+.booking {
+  text-align: center;
+  padding: 20px;
+}
+
+.booking form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.booking input, .booking select, .booking button {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking button {
+  background-color: #8b6c5c;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.booking button:hover {
+  background-color: #6a5143;
+}

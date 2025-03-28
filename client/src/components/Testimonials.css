@@ -1,0 +1,97 @@
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.testimonials h2 {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 255, 255, 0.6),
+               0 0 30px rgba(255, 255, 255, 0.4);
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+
+.testimonial-slider {
+  width: 60%;
+  margin: auto;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+              0 0 20px rgba(255, 255, 255, 0.6),
+              0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+}
+
+.testimonial-card h3 {
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.testimonial-card p {
+  font-size: 16px;
+  color: white;
+  margin-top: 5px;
+}
+
+form input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  padding: 10px;
+  width: 50%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+form button {
+  background-color: #8b6c5c;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #6a5143;
+}
+
+
+
+.testimonial-slider,
+.services-slider {
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card,
+  .service-card {
+    width: 90%;
+  }
+}

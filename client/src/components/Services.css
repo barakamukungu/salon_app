@@ -1,0 +1,58 @@
+.services {
+  width: 80%;
+  margin: auto;
+  height: 50vh;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.services h2 {
+  font-size: 30px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 255, 255, 0.6),
+               0 0 30px rgba(255, 255, 255, 0.4);
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+
+.services-slider {
+  width: 60%;
+  margin: auto;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+              0 0 20px rgba(255, 255, 255, 0.6),
+              0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.service-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+}
+
+.service-card h3 {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .service-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
