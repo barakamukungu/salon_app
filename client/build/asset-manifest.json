@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.12128e37.css",
-    "main.js": "/static/js/main.8a471d69.js",
-    "static/js/453.90e0d103.chunk.js": "/static/js/453.90e0d103.chunk.js",
-    "index.html": "/index.html",
-    "main.12128e37.css.map": "/static/css/main.12128e37.css.map",
-    "main.8a471d69.js.map": "/static/js/main.8a471d69.js.map",
-    "453.90e0d103.chunk.js.map": "/static/js/453.90e0d103.chunk.js.map"
+    "main.css": "/salon-app/static/css/main.1bb036a9.css",
+    "main.js": "/salon-app/static/js/main.66e65045.js",
+    "static/js/453.90e0d103.chunk.js": "/salon-app/static/js/453.90e0d103.chunk.js",
+    "index.html": "/salon-app/index.html",
+    "main.1bb036a9.css.map": "/salon-app/static/css/main.1bb036a9.css.map",
+    "main.66e65045.js.map": "/salon-app/static/js/main.66e65045.js.map",
+    "453.90e0d103.chunk.js.map": "/salon-app/static/js/453.90e0d103.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12128e37.css",
-    "static/js/main.8a471d69.js"
+    "static/css/main.1bb036a9.css",
+    "static/js/main.66e65045.js"
   ]
 }
