@@ -6,26 +6,25 @@ const Testimonials = () => {
   const [newTestimonial, setNewTestimonial] = useState({ name: "", text: "" });
 
   useEffect(() => {
-    fetch("/api/testimonials")
-      .then((res) => res.json())
-      .then((data) => setTestimonials(data));
+    const savedTestimonials = JSON.parse(localStorage.getItem("testimonials")) || [];
+    setTestimonials(savedTestimonials);
   }, []);
 
   const handleChange = (e) => {
     setNewTestimonial({ ...newTestimonial, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const response = await fetch("/api/testimonials", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newTestimonial),
-    });
-    if (response.ok) {
-      setTestimonials([...testimonials, newTestimonial]);
-      setNewTestimonial({ name: "", text: "" });
-    }
+    const updatedTestimonials = [...testimonials, newTestimonial];
+    localStorage.setItem("testimonials", JSON.stringify(updatedTestimonials));
+    setTestimonials(updatedTestimonials);
+    setNewTestimonial({ name: "", text: "" });
+  };
+
+  const handleReset = () => {
+    localStorage.removeItem("testimonials");
+    setTestimonials([]);
   };
 
   return (
@@ -39,11 +38,31 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
+
       <form onSubmit={handleSubmit} className="testimonial-form">
-        <input type="text" name="name" placeholder="Your Name" value={newTestimonial.name} onChange={handleChange} required />
-        <textarea name="text" placeholder="Your Review" value={newTestimonial.text} onChange={handleChange} required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={newTestimonial.name}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="text"
+          placeholder="Your Review"
+          value={newTestimonial.text}
+          onChange={handleChange}
+          required
+        />
         <button type="submit">Submit Review</button>
       </form>
+
+      {testimonials.length > 0 && (
+        <button onClick={handleReset} className="reset-button">
+          Reset Testimonials
+        </button>
+      )}
     </section>
   );
 };
