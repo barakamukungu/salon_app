@@ -82,7 +82,20 @@ form button:hover {
   background-color: #6a5143;
 }
 
+.reset-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+.reset-button:hover {
+  background-color: #e60000;
+}
 
 .testimonial-slider,
 .services-slider {
